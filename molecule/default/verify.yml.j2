@@ -6,7 +6,7 @@
   tasks:
     - name: Initialize role
       ansible.builtin.include_role:
-        name: {{ role_name }}
+        name: lstig.{{ role_name }}
         tasks_from: init
         public: true
 
