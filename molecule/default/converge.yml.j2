@@ -1,7 +1,5 @@
 ---
 - name: Converge
   hosts: all
-  tasks:
-    - name: Include {{ role_name }}
-      ansible.builtin.include_role:
-        name: lstig.{{ role_name }}
+  roles:
+    - lstig.{{ role_name }}
